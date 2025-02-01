@@ -64,6 +64,7 @@ int recognize_card(byte *buffer, byte bufferSize){
       buffer[2] == ssomaek_0_10[2] && 
       buffer[3] == ssomaek_0_10[3] ){
     Serial.print("soju 0 : beer 10 out");
+    Serial.print("soju 0 : beer 10 out"); // check variation
     return 0; // = soju_ratio
   }
   if (buffer[0] == ssomaek_1_9[0] &&
